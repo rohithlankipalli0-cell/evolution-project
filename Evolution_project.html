@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVOLUTION</title>
+    <link rel="stylesheet" href="color.css">
+</head>
+<body>
+    <div class="intro">
+        <header id="menu">
+        <h1>Know About Evolution OF Life </h1>
+                <button>Theory</button>
+            <button>
+                Quiz
+            </button>
+    </header>
+    </div>
+    <main>
+        <section id="Theory" style="display: none;">
+            <section class="para1"><h1>ORIGIN OF LIFE</h1>
+            <p >The origin of life started from the universes and the earth. According to the Big Bang 
+                theory, the universe formed 13.8 billion's year ago, then the earth is formed about 4.5 
+                billion's years ago. At the starting earth has no atmosphere, later some gases like 
+                ammonia, carbon dioxide water vapour and so-on released from the hot surface and 
+                slowly earth stated cooling, then water vapour condensed to form rain, and oceans 
+                were created. Early scientists believed in ideas like Panspermia and spontaneous 
+                generation, but these were rejected by later experiments. The Oparin-Haldane theory 
+                suggested that life originated from non-living organic molecules in the atmosphere The 
+                first non-cellular life appeared about 3 billion years ago, followed by simple cellular life 
+                around 2 billion years ago, all living first in water. </p></section>
+            <section class="para2"><h1 class="head">EVOLUTIONS OF LIFE FORMS</h1>
+                <p >In earlier stages the people believe a theory that all species were created as they are 
+                and never changed then, Charles Darwin observed that different organisms show 
+                similarities to each other and to extinct species He concluded that life forms gradually 
+                evolved over long periods through a process called natural selection. Organisms show 
+                variations and reproduce more Over generations; new species arise from common 
+                ancestors and then he changed the mind of the people by explaining the evolutions are 
+                slow and occurs through the natural selection. </p></section>
+            <section class="para3"><h1>BIOLOGICAL EVOLUTIONS </h1>
+                <img src="https://themuslimtimes.info/wp-content/uploads/2013/12/charles-darwin-tree-of-life-e1387177172113.jpg" alt="https://themuslimtimes.info/wp-content/uploads/2013/12/charles-darwin-tree-of-life-e1387177172113.jpg">
+            <p >Biological evolutions started when living cells started to appear forms the core part of 
+                the Darwin's theory of the evolutions, Microorganisms evolve very fast because they 
+                reproduce quickly, whereas larger animals evolve slowly since their life span is long 
+                Lamarck earlier proposed that organisms evolved by using or not using organs, but this 
+                idea was rejected because acquired characters cannot be inherited. Evolution is 
+                therefore understood as a gradual process driven by inherited variations. </p></section>
+            <section class="para4" ><h1 class="head">MECHANISM OF EVOLUTION</h1>
+                <img src="https://www.visiblebody.com/hubfs/learn/bio/assets/evolution/mechanisms-of-evolution.jpg" alt >
+            <p >What is the origin of this variation and how does speciation occur? Even though Mendel 
+                had talked of inheritable 'factors' influencing phenotype, Darwin either ignored these 
+                observations or kept silence. In the first decade of twentieth century, Hugo Devries 
+                based on his work on evening primrose brought forth the idea of mutations-large 
+                difference arising suddenly in a population. He believed that it is mutation which 
+                causes evolution and not the minor variations (heritable) that Darwin talked about. 
+                Mutations are random and directionless while Darwinian variations are small and 
+                directional. Evolution for Darwin was gradual while Devries believed mutation caused 
+                speciation and hence called it saltation (single step large mutation). Studies in 
+                population genetics, later, brought out some clarity. </p></section>
+            <section class="para5"><h1 >HARDY-WEINBERG PRINCIPLE</h1>
+                <img src="https://tse2.mm.bing.net/th/id/OIP.uvLUAvthGD9_qO-PgYQBqQHaFj?rs=1&pid=ImgDetMain&o=7&rm=3" alt >
+            <p >The Hardy-Weinberg principle states that the allele frequencies in a large, randomly 
+                mating population remain constant from generation to generation if no evolutionary 
+                forces act on it. This stable condition is called genetic equilibrium. If the frequencies 
+                deviate from expected mathematical values, evolution is taking place. The principle 
+                uses the formula p² + 2pq + q² = 1 to represent the frequencies of different genotypes. 
+                Factors such as mutation, gene flow, genetic drift, recombination and natural selection 
+                disturb this equilibrium and cause evolutionary change.</p></section>
+            <section class="para6"><h1>A BRIEF ACCOUNT OF EVOLUTION </h1>
+            <p >Life on earth began around 2000 million years ago with simple cells. Over time, single
+                celled organisms gave rise to multicellular forms. About 500 million years ago, 
+                invertebrates appeared, followed by jawless fish and then amphibians. Plants invaded 
+                land before animals. Lobefin fish evolved into the first amphibians, which later gave rise 
+                to reptiles. Reptiles dominated the earth for millions of years, including the dinosaurs. 
+                Around 65 million years ago, dinosaurs disappeared due to unknown reasons. 
+                Mammals, which were small earlier, began to dominate and diversified into many 
+                forms, including those that returned to water like whales and dolphins. Evolution 
+                continued through various geological periods, leading to the diversity we see today.</p></section>
+            <section class="para7"><h1 class="head" >ORIGIN AND EVOLUTION OF MAN </h1>
+             <p> million years ago. Around 3-4 million years ago, Australopithecus lived in African 
+                grasslands and walked upright. Later came Homo habilis, with a larger brain and the 
+                ability to use tools. Homo erectus appeared about 1.5 million years ago and had a still 
+                larger brain and ate meat. Neanderthal humans lived between 100,000 and 40,000 
+                years ago and showed cultural behaviour like burying the dead. Modern humans, Homo 
+                sapiens, arose in Africa between 75,000 and 10,000 years ago and spread across 
+                continents. They developed language, tools, art and agriculture, which eventually led to 
+                the rise of human civilizations.</p></section>
+            <button onclick ="goback()"> Back</button>  
+            </main>
+        </section>
+       
+
+    <section id="Quiz" style="display: none;" class="que">
+
+    <div class="container">
+        <h2>Evolution Quiz</h2>
+
+        <form id="quizForm"></form>
+
+        <button id="submitBtn" type="button" onclick="submitQuiz()">Submit</button>
+
+<button id="resetBtn" type="button" onclick="resetQuiz()" style="display:none;">Reset Quiz</button>
+
+<div id="scoreBox"></div>
+
+<br><br>
+<button type="button" onclick="goback()">Back</button>
+
+    </div>
+
+    
+       
+
+    <script>
+        const quizData = [
+            {q:"According to the Big Bang theory, how old is the universe?", 
+            o:["4.5 billion years","13.8 billion years","3 billion years","4000 years"], a:1},
+
+            {q:"Who dismissed spontaneous generation?", 
+            o:["S.L. Miller","Charles Darwin","Oparin & Haldane","Louis Pasteur"], a:3},
+
+            {q:"Which ship did Charles Darwin travel on?", 
+            o:["H.M.S. Beagle","The Mayflower","H.M.S. Challenger","Santa Maria"], a:0},
+
+            {q:"When did first cellular life appear on Earth?", 
+            o:["4.5 billion years","500 million years","2000 million years","15 million years"], a:2},
+
+            {q:"Which hominid was the first human-like being?", 
+            o:["Homo erectus","Neanderthal man","Homo habilis","Ramapithecus"], a:2},
+
+            {q:"What did Miller observe in his 1953 experiment?", 
+            o:["Non-cellular life","Amino acids","Spontaneous microbes","Water breakup"], a:1},
+
+            {q:"According to Darwin, fitness means ___", 
+            o:["Strength","Survival","Reproductive fitness","No variation"], a:2},
+
+            {q:"Forelimbs of whales, bats show:", 
+            o:["Different structure same function","Same structure different function","Vestigial","Analogous"], a:1},
+
+            {q:"Dark moth increase after industrialization because:", 
+            o:["White moths hidden","Dark moths camouflaged","Pollution mutation","Better lichens"], a:1},
+
+            {q:"Selection with individuals at both ends:", 
+            o:["Stabilisation","Directional","Disruption","Stochastic"], a:2},
+
+            {q:"Difference between Darwin & de Vries:", 
+            o:["Random vs small","Gradual vs sudden","Use & disuse","Plants only"], a:1},
+
+            {q:"Placental & marsupial wolf similarity shows:", 
+            o:["Divergent","Convergent","Homology","Drift"], a:1},
+
+            {q:"Bird & butterfly wings show:", 
+            o:["Common ancestor","Divergent","Convergent","Same structure"], a:2},
+
+            {q:"Not Hardy-Weinberg factor:", 
+            o:["Gene migration","Genetic drift","Natural selection","Genetic equilibrium"], a:3},
+
+            {q:"Allele change by chance—founders:", 
+            o:["Founder Effect","Natural Selection","Adaptive Radiation","Stabilisation"], a:0},
+        ];
+
+        let quizFormEl = document.getElementById("quizForm");
+
+        quizData.forEach((item, index) => {
+            let qHtml = `
+                <div class="question">
+                    <p><b>${index+1}. ${item.q}</b></p>
+                    ${item.o.map((opt,i)=>`
+                        <label>
+                        <input type="radio" name="q${index}" value="${i}">
+                        ${opt}
+                        </label>
+                    `).join("")}
+                </div>
+            `;
+            quizFormEl.innerHTML += qHtml;
+        });
+
+        function submitQuiz(){
+            let score = 0;
+
+            quizData.forEach((item,index)=>{
+                let selected = document.querySelector(`input[name="q${index}"]:checked`);
+                if(selected && Number(selected.value) === item.a){
+                    score++;
+                }
+            });
+
+            let total = quizData.length;
+
+            let scoreBox = document.getElementById("scoreBox");
+            scoreBox.style.display = "block";
+            scoreBox.innerHTML = `Your Score: ${score} / ${total}`;
+
+            
+            document.getElementById("quizForm").style.display = "none";
+            document.getElementById("submitBtn").style.display = "none";
+            document.getElementById("resetBtn").style.display = "block";
+        }
+        function resetQuiz(){
+    
+    document.getElementById("quizForm").style.display = "block";
+
+   
+    document.getElementById("submitBtn").style.display = "block";
+
+    
+    document.getElementById("resetBtn").style.display = "none";
+
+    
+    let scoreBox = document.getElementById("scoreBox");
+    scoreBox.style.display = "none";
+    scoreBox.innerHTML = "";
+
+    
+    document.querySelectorAll("input[type='radio']").forEach(r => r.checked = false);
+}
+
+    </script>
+
+</section>  
+     <script>
+        const menu=document.getElementById("menu");
+        const Theory=document.getElementById("Theory");
+        const Quiz=document.getElementById("Quiz");
+        const intro = document.querySelector(".intro");
+        menu.addEventListener("click",event =>{
+            if (event.target.tagName==="BUTTON"){
+            menu.style.display="none"
+            Theory.style.display = "none";
+            Quiz.style.display = "none"; 
+            document.querySelector(".intro").style.display = "none";
+            let choice = event.target.textContent.trim();
+              if (choice==="Theory") {
+                Theory.style.display = "block";
+                }else if (choice === "Quiz") {
+                  Quiz.style.display = "block";
+                }
+            }
+        })
+        function goback(){
+            Theory.style.display ="none";
+            Quiz.style.display="none";
+            intro.style.display = "flex";
+            menu.style.display= "block"
+            intro.style.backgroundImage=URL("image.avif")
+        }
+    </script>
+</body>
+</html>
